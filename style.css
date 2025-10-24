@@ -1,0 +1,153 @@
+.body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    padding-top: 45px;
+    font-size: large;
+    letter-spacing:5px;
+}
+.myCard {
+    background-color: #ffffff;
+    margin: 5vh 5vw;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 24px rgba(18, 25, 33, 0.08);
+}
+
+/* Style the picture element */
+picture {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 80%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.checkOut {
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+   
+}
+
+.checkOut:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bio{
+    font-size: larger;
+}
+.perfume {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    
+}
+
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+}
+
+.fraunces-MMA {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+h2 {
+    color: hsl(212, 21%, 14%);
+    margin: 0;
+}
+
+.montserrat500 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat700 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.money-container {
+    display: flex;
+    align-items: center;  /* Vertically centers both prices */
+    gap: 15px;  /* Space between them */
+}
+.moneyBefore {
+ 
+    text-decoration: line-through;
+    margin-left: 15px;
+    
+    
+
+}
+
+.moneyAfter {
+    color: hsl(158, 36%, 37%);
+    font-size: 3rem;
+}
+
+/* Desktop layout */
+@media (min-width: 800px) {
+    .myCard {
+        flex-direction: row;
+        max-width: 900px;
+    }
+
+    picture {
+        width: 50%;
+        display: flex;
+    }
+
+    .perfume {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        width: 50%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .per{
+        font-size: 3em;
+    }
+}
